@@ -27,7 +27,7 @@ const regex = /[aeiouy]/g; // matches any vowel (global flag)
 const matches = word.match(regex);
 
 return matches? matches.length : 0;
-
+ 
 }
 
 console.log(countSyllables("Hehehehehehe")) //, 6)
