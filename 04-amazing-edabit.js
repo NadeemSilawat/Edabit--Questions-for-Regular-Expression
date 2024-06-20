@@ -1,18 +1,26 @@
-function amazingEdabit(str) {
- let result = ""; 
-  
+// https://edabit.com/challenge/bCMai3bYsRpikCyrh
 
-      for (let i = 0; i < str.length; i++) {
-            if (str[i] === "a" || str[i] === "e" || str
-              [i] === "i" || str[i] === "o" || str[i]
-              === "u") {
-                result += str[i].toUpperCase();
-                } else {
-                  result += str[i];
-                  }
-                  }
-                  return result;
-                  
+function amazingEdabit(str) {
+// 1. Find edabit 
+  // 2. Check if it's amazing
+  // 3. edabit not change string
+  // 4. replace  'amazing' to 'not amazing'.
+
+  const r = /edabit/g;
+  
+  const find = r.test(str);
+
+  // using ternary Operator 
+  return /edabit/g?str: str.replace('amazing','not amazing');
+
+  // console.log(find)
+  // if(find){
+  //   return str
+  // }else{
+  // return str.replace('amazing','not amazing')
+  //   // return str + ' is not amazing.'
+  // }
+
 }
 
 console.log(amazingEdabit('edabit is amazing.')); //, "edabit is amazing.")
