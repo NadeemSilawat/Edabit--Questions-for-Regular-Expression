@@ -1,3 +1,5 @@
+// https://edabit.com/challenge/iiSAic33n4wGufQmG
+
 function isLastCharacterN(word) {
   const r = /n$/;
   const find = r.test(word);
