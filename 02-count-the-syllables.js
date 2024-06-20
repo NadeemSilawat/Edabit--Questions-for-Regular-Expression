@@ -1,3 +1,5 @@
+https://edabit.com/challenge/rkoYERWYDt32qZLvH
+
 function countSyllables(str) {
 
 /* (1)  Normal Way...
