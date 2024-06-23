@@ -7,7 +7,7 @@ function amazingEdabit(str) {
   // 4. replace  'amazing' to 'not amazing'.
 
   const r = /edabit/g;
-  
+   
   const find = r.test(str);
 
   // using ternary Operator 
