@@ -1,7 +1,9 @@
 // https://edabit.com/challenge/KWkWjHNzgCqM6yPBa
 
 function filterString(txt) {
-	const re = /s/g;
+
+    return txt.match(/[a-zA-Z0-9]+/g).map(word => word.length) 
+
 }
 
 console.log(filterString("*$(#Mu12bas43hiR%@*!")) //, [2,6,4,8])
